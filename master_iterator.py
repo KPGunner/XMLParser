@@ -2,7 +2,7 @@ from change_dict import *
 import os
 
 # path = input('Copy and paste the folder path and hit enter.')
-path = r'\\cobra\AV-8\Common\Users\Kyle\A1-570BE-MDB-000\XML'
+path = r'Path to your files'
 print('\n', path, '\n')
 
 
