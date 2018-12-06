@@ -1,5 +1,5 @@
 import os
-from change_dict import *
+
 
 # Get the path to the directory you want to make changes to. #
 # path = input('Copy and paste the folder path and hit enter.')
