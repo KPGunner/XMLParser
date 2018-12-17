@@ -22,13 +22,11 @@ def global_replace():
                 reader = csv.reader(f)
                 next(reader, None)
                 for row in reader:
-                    # print(row[0], '\n')
                     openfile = openfile.replace(row[0], row[1])
                     new_path = os.path.join(path, 'Updates', file)
                     changed = open(new_path, 'w', encoding='utf-8')
                 changed.write(openfile)
                 changed.close()
-
 
 
 global_replace()
