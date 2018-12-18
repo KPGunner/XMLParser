@@ -6,7 +6,6 @@ import logging
 
 log = logging.basicConfig(level=logging.DEBUG)
 start = time.time()
-globals_file = open('globals.csv', 'r')
 
 # path = input('Copy and paste the folder path and hit enter.')
 path = r'C:\Users\PATH TO FOLDER WITH XML FILES'
