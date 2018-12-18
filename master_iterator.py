@@ -9,7 +9,7 @@ start = time.time()
 globals_file = open('globals.csv', 'r')
 
 # path = input('Copy and paste the folder path and hit enter.')
-path = r'C:\Users\kgunn\PycharmProjects\xml_parse_test\Test'
+path = r'C:\Users\PATH TO FOLDER WITH XML FILES'
 new_path = os.mkdir(os.path.join(path, 'Updates'))
 print('\n', f'You are working inside {path}.', '\n')
 
