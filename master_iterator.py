@@ -6,7 +6,7 @@ import io
 start = time.time()
 
 path = input('Copy and paste the folder path and hit enter.')
-# path = r'Z:\Common\Users\Kyle\A1-AV8BB-950-200\XML Files'
+# path = r'Z:\Common\UsersPATH TO FOLDER WITH XML FILES'
 new_path = os.mkdir(os.path.join(path, 'Updates'))
 print('\n', f'You are working inside {path}.', '\n')
 
