@@ -1,7 +1,6 @@
 import csv
 import os
 import time
-import io
 import re
 
 # path = input('Copy and paste the folder path and hit enter.')
@@ -16,7 +15,7 @@ def global_replace():
     breaker = False
     for file in os.listdir(path):
         if file.endswith('.xml'):
-            with io.open(path + "\\" + file, 'r+', newline=None, encoding='utf-8') as openfile:
+            with open(path + "\\" + file, 'r+', newline=None, encoding='utf-8') as openfile:
                 openfile = openfile.read().replace("', '", ' ').replace('\n', ' ')
                 f = open('globals.csv', 'r')
                 f.seek(0)
