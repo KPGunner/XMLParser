@@ -1,7 +1,7 @@
 import csv, os, time, re
 
 # path = input('Copy and paste the folder path and hit enter.')
-path = r'Z:\AV8 techpubs\TO 0090 (OPT 02)\XML\In Process\A1-AV8BB-760-200\XML'
+path = r'FOLDER PATH'
 new_path = os.mkdir(os.path.join(path, 'Updates'))
 print('\n', f'You are working inside {path}.', '\n')
 
