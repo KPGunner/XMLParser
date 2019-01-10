@@ -1,10 +1,7 @@
-import csv
-import os
-import time
-import re
+import csv, os, time, re
 
 # path = input('Copy and paste the folder path and hit enter.')
-path = r'C:\Users\kgunn\PycharmProjects\Global_V1\Test'
+path = r'Z:\AV8 techpubs\TO 0090 (OPT 02)\XML\In Process\A1-AV8BB-760-200\XML'
 new_path = os.mkdir(os.path.join(path, 'Updates'))
 print('\n', f'You are working inside {path}.', '\n')
 
@@ -17,7 +14,7 @@ def global_replace():
         if file.endswith('.xml'):
             with open(path + "\\" + file, 'r+', newline=None, encoding='utf-8') as openfile:
                 openfile = openfile.read().replace("', '", ' ').replace('\n', ' ')
-                f = open('globals.csv', 'r')
+                f = open('all_globals.csv', 'r')
                 f.seek(0)
                 reader = csv.reader(f)
                 next(reader, None)
